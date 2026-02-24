@@ -1,10 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Skill2Income</title>
+    <title>Skill2Income - AI Assistant</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: linear-gradient(to right, #4e73df, #1cc88a);
+            text-align: center;
+            padding: 50px;
+            color: white;
+        }
+        input {
+            padding: 10px;
+            width: 250px;
+            border-radius: 5px;
+            border: none;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            background: black;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .box {
+            background: white;
+            color: black;
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to Skill2Income 🚀</h1>
-    <p>Your app is working successfully!</p>
+
+    <h1>Skill2Income 🚀</h1>
+    <p>Enter your skill and get a 30-day earning roadmap</p>
+
+    <div class="box">
+        <form method="POST">
+            <input type="text" name="skill" placeholder="Enter your skill" required>
+            <br><br>
+            <button type="submit">Generate Plan</button>
+        </form>
+    </div>
+
 </body>
-</html> 
+</html>
