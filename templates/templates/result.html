@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Earning Plan</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f8f9fc;
+            padding: 40px;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px gray;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h2>Skill: {{ skill }}</h2>
+        <h3>Recommended Platforms:</h3>
+        <p>{{ data.platforms }}</p>
+
+        <h3>Estimated Earning:</h3>
+        <p>{{ data.earning }}</p>
+
+        <h3>30 Day Plan:</h3>
+        <pre>{{ data.plan }}</pre>
+
+        <br>
+        <a href="/">Go Back</a>
+    </div>
+
+</body>
+</html>
